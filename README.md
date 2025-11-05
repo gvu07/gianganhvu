@@ -49,11 +49,37 @@ WEBSITE/
    - Name it something like `personal-website` or `gianganhvu-portfolio`
 
 3. **Push to GitHub**:
+   
+   First, make sure you have authentication set up. You have two options:
+   
+   **Option A: Using HTTPS with Personal Access Token (Recommended)**
    ```bash
+   # Add remote (skip if already added)
    git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   
+   # Ensure you're on main branch
    git branch -M main
+   
+   # Push to GitHub (you'll be prompted for username and personal access token)
    git push -u origin main
    ```
+   *Note: You'll need a GitHub Personal Access Token instead of your password. Create one at: GitHub Settings → Developer settings → Personal access tokens → Tokens (classic)*
+   
+   **Option B: Using SSH (if you have SSH keys set up)**
+   ```bash
+   # Change remote to SSH if currently using HTTPS
+   git remote set-url origin git@github.com:YOUR_USERNAME/YOUR_REPO_NAME.git
+   
+   # Push to GitHub
+   git push -u origin main
+   ```
+   
+   **How to verify it worked:**
+   - Visit your GitHub repository URL: `https://github.com/YOUR_USERNAME/YOUR_REPO_NAME`
+   - You should see all your files (index.html, about.html, css/, js/, assets/, etc.)
+   - Check the commit history - you should see "Initial commit: Personal portfolio website"
+   - Run `git remote -v` to confirm the remote is configured correctly
+   - Run `git status` - it should show "Your branch is up to date with 'origin/main'"
 
 4. **Connect to Cloudflare Pages**:
    - Log in to your Cloudflare dashboard
