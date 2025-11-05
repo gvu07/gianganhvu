@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giang Anh Vu - Engineer Portfolio">
+    <title>Giang Anh Vu | Engineer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Giang Anh Vu</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">gianganhvu.com is being built</h1>
+                    <p class="hero-subtitle">Welcome to my engineering portfolio. This site is currently under construction.</p>
+                    
+                    <div class="resume-section">
+                        <a href="assets/resume/resume.pdf" download="Giang_Anh_Vu_Resume.pdf" class="resume-btn">
+                            <span>Download Resume</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 15V5M10 15L5 10M10 15L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Email Subscription -->
+                    <div class="subscription-section">
+                        <h2 class="subscription-title">Stay Updated</h2>
+                        <p class="subscription-text">Subscribe to receive updates when new content is added</p>
+                        <form id="subscription-form" class="subscription-form">
+                            <input 
+                                type="email" 
+                                id="email-input" 
+                                name="email" 
+                                placeholder="Enter your email address" 
+                                required
+                                class="email-input"
+                            >
+                            <button type="submit" class="subscribe-btn">
+                                Subscribe
+                            </button>
+                        </form>
+                        <div id="subscription-message" class="subscription-message"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Giang Anh Vu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

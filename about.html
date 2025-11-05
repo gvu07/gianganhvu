@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Giang Anh Vu - Engineer">
+    <title>About Me | Giang Anh Vu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Giang Anh Vu</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- About Me Section -->
+        <section class="about-section">
+            <div class="container">
+                <h1 class="section-title">About Me</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-paragraph">
+                            Welcome! I'm Giang Anh Vu, an engineer passionate about innovation and problem-solving. 
+                            I'm currently pursuing my engineering education and working on various projects that combine 
+                            technical expertise with creative thinking.
+                        </p>
+                        <p class="about-paragraph">
+                            My interests span across mechanical engineering, software development, and research. 
+                            I enjoy tackling complex challenges and finding elegant solutions that make a meaningful impact.
+                        </p>
+                        <p class="about-paragraph">
+                            Feel free to download my resume to learn more about my background, education, and experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section class="hobbies-section">
+            <div class="container">
+                <h2 class="section-title">Hobbies & Interests</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🎯</div>
+                        <h3 class="hobby-title">Engineering Projects</h3>
+                        <p class="hobby-description">Working on various engineering projects and experiments to apply theoretical knowledge to real-world problems.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">💻</div>
+                        <h3 class="hobby-title">Programming</h3>
+                        <p class="hobby-description">Developing software solutions and exploring different programming languages and frameworks.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🔬</div>
+                        <h3 class="hobby-title">Research</h3>
+                        <p class="hobby-description">Engaging in research projects, particularly in areas of engineering and technology innovation.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">📚</div>
+                        <h3 class="hobby-title">Learning</h3>
+                        <p class="hobby-description">Continuously learning new technologies, methodologies, and staying updated with industry trends.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Download Section -->
+        <section class="resume-section-page">
+            <div class="container">
+                <h2 class="section-title">Resume</h2>
+                <p class="section-subtitle">Download my resume to learn more about my experience and qualifications</p>
+                <a href="assets/resume/resume.pdf" download="Giang_Anh_Vu_Resume.pdf" class="resume-btn">
+                    <span>Download Resume</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 15V5M10 15L5 10M10 15L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Email Subscription -->
+        <section class="subscription-section-page">
+            <div class="container">
+                <h2 class="section-title">Stay Updated</h2>
+                <p class="section-subtitle">Subscribe to receive updates when new content is added to my website</p>
+                <form id="subscription-form-about" class="subscription-form">
+                    <input 
+                        type="email" 
+                        id="email-input-about" 
+                        name="email" 
+                        placeholder="Enter your email address" 
+                        required
+                        class="email-input"
+                    >
+                    <button type="submit" class="subscribe-btn">
+                        Subscribe
+                    </button>
+                </form>
+                <div id="subscription-message-about" class="subscription-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Giang Anh Vu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
